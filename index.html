@@ -3,48 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elite projectWiki / Portfolio</title>
-    <link rel="icon" type="image/png" href="logo.png">
+    <title>EliteWiki / Portfolio</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
-            background-color: rgba(27, 27, 27, 0.1);
+            background-color: #282828;
         }
         .container {
             max-width: 800px;
             margin: auto;
-            background: rgba(27, 27, 27, 0.1);
+            background: rgb(223, 223, 223);
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 10px rgba(27, 27, 27, 0.3);
             border-radius: 10px;
+            text-align: center;
         }
         h1, h2 {
             text-align: center;
         }
         .section {
             margin-bottom: 20px;
+            text-align: left;
+        }
+        .logo {
+            max-width: 150px;
+            display: block;
+            margin: 0 auto 20px;
+        }
+        .nav {
+            margin-bottom: 20px;
+        }
+        .nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to My Prject Wiki & Portfolio</h1>
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>Welcome to My Wiki & Portfolio</h1>
+        
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="blogs.html">Blogs</a>
+            <a href="#contact">Contact</a>
+        </div>
         
         <div class="section">
             <h2>About Me</h2>
-            <p>I am a 15-year-old C++ programmer with almost a year 
-                of experience in graphics programming and over two years of coding experience in total. 
-                I am currently in 10th grade in India and have contributed to the Raylib community by fixing a small 
-                bug in its CMake configuration. Additionally, I have some experience with Rust.</p>
+            <p>I am a 15-year-old C++ programmer with almost a year of experience in graphics programming and over two years of coding experience in total. I am currently in 10th grade in India and have contributed to the Raylib community by fixing a small bug in its CMake configuration. Additionally, I have some experience with Rust.</p>
         </div>
         
         <div class="section">
             <h2>Skills</h2>
             <ul>
                 <li>C++ Programming</li>
-                <li>rust Programming</li>
+                <li>Rust Programming</li>
                 <li>Graphics Programming</li>
                 <li>Game Development</li>
                 <li>Working with visual studio and VSCode</li>
@@ -53,7 +73,7 @@
         
         <div class="section">
             <h2>Projects</h2>
-            <p>2D Render that uses OpenGL & DX11 HEX2D <a href="https://github.com/elite0OG/hex2D"> link</a></p>
+            <p>2D Render / Game engine that uses OpenGL & DX11 HEX2D <a href="https://github.com/elite0OG/hex2D"> link</a></p>
             <p>PONG game made in rust <a href="https://github.com/elite0OG/pong-in-rust"> link</a></p>
             <p>openGl base libary NovaGL <a href=" https://github.com/elite0OG/NovaGL"> link</a></p>
             <p>openGl base libary NovaGL-win(without any dependance) <a href="https://github.com/elite0OG/NovaGL-win32"> link</a></p>
@@ -61,11 +81,10 @@
             <p>and more on profile</p>
         </div>
         
-        <div class="section">
+        <div class="section" id="contact">
             <h2>Contact</h2>
             <p>Email: tarunmeena2233@outlook.com</p>
             <p>GitHub: <a href="https://github.com/elite0OG">Profile</a></p>
-            <p><a href="*">Blogs</a></p>
         </div>
     </div>
 </body>
